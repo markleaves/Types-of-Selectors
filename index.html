@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Types of Selectors</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<h1>Selectors </h1>
+<ul  style="list-style-type: square;">
+<li>Simple selectors (select elements based on name, id, class)</li>
+<li>Combinator selectors (select elements based on a specific relationship between them)</li>
+<li>Pseudo-class selectors (select elements based on a certain state)</li>
+<li>Pseudo-elements selectors (select and style a part of an element)</li>
+<li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+</ul>
+
+<h1>simple Selectors </h1>
+<h2>The element Selector </h2>
+<p class="element"> this is element selector, inside the tag is element </p>
+<h2>The CSS id Selector</h2>
+<p id="id"> the id selector called in # symbol</p>
+<h2> 	The CSS class Selector </h2>
+<p class="cla"> class selecors referes to .symbol</p>
+<h2>The CSS Universal Selector</h2>
+<p> the Universal selector refers to * </p>
+<h2>The CSS Grouping Selector<h2>
+<p> groping selector refers to multiple element selector</p>
+<br>
+<br>
+
+<h1> CSS Combinator selecors Types</h1>
+<ul> 
+<li>descendant selector (space)</li>
+<li>child selector (>)</li>
+<li>adjacent sibling selector (+)</li>
+<li>general sibling selector (~)</li>
+</ul>
+
+<h2>Descendant Selector</h2>
+<p>The descendant selector matches all elements that are descendants of a specified element. <b>div class only</b></p>
+<div class="des">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the divh.</p>
+  <section><p>Paragraph 3 in the div.</p></section>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+<br>
+
+<h2>child selector (>)</h2>
+
+<p>The child selector (>) selects all elements that are the children of a specified element.</p>	
+
+<p> specified elements or class all childs</p>
+<div class="child">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 in the div (inside a section element).</p>
+  </section>
+  <p>Paragraph 4 in the div.</p>
+</div>
+
+<p>Paragraph 5. Not in a div.</p>
+<p>Paragraph 6. Not in a div.</p>
+<br>
+
+<h2>Adjacent Sibling Selector (+)</h2>
+
+<p>The + selector is used to select an element that is directly after another specific element.</p>
+<section class=" adjacent">
+
+  <p>Paragraph 1 in the div.</p
+  <p>Paragraph 2 in the div.</p>
+</section>
+
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p>
+
+<section>
+  <p>Paragraph 5 in the div.</p>
+  <p>Paragraph 6 in the div.</p>
+</section>
+
+<p>Paragraph 7. After a div.</p>
+<p>Paragraph 8. After a div.</p>
+
+
+<h2>General Sibling Selector (~)</h2>
+
+<p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+
+<div class="Sibling">
+<p>Paragraph 1.</p>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+<br>
+<br>
+
+<h1>CSS Pseudo-classes</h1>
+
+<h2>Anchor Pseudo-classes</h2>
+<ul>
+<li>link</li> <li>visited</li> <li>hover</li> <li>active</li>
+</ul>
+
+<h2>Styling a link depending on state</h2>
+
+<a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_pseudo-class_links"> <b>www.w3schools.com </b></a>
+
+<h2>hover on "div class"</h2>
+
+<p>Mouse over the div element below to change its background color:</p>
+
+<div class="hover">Mouse Over Me</div>
+
+<h2> Simple Tooltip Hover </h2>
+
+<div id="hide">Hover over this div element to show the p element
+  <h4>Hai buddy! I am here ! whatupp <h4>
+</div>
+
+<h2>CSS - The :first-child Pseudo-class<h2>
+
+<p>This is some text.</p>
+<p>This is some text.</p>
+
+<ol class="jj">
+  <li>This is some text.</li>
+  <li>This is some text.</li>
+</ol>
+
+<h2>css - The :last-child Pseudo-class<h2>
+
+<ol class="hh" >
+<li>hello students</li>
+<li> hello guys</li>
+<li> hello boys</li>
+</ol>
+<p>This is some text.</p>
+<p>This is some text.</p>
+
+<h2> css - the :nth-of-type(n) class</h2>
+
+<ol class="ju">
+<li> input 1</li>
+<li> input 2</li>
+<li> input 3</li>
+<li> input 4</li>
+<li> input 5</li>
+<li> input 6</li>
+</ol>
+
+<h2> css - the :nth-of-type(odd or even) class</h2>
+
+<ol class="odd">
+<li> input 1</li>
+<li> input 2</li>
+<li> input 3</li>
+<li> input 4</li>
+<li> input 5</li>
+<li> input 6</li>
+</ol>
+<br>
+<br>
+
+<h1>All CSS Pseudo Elements</h1>
+
+<b> pseudo elements refers to :: symbol</b>
+
+<h2> after</h2>
+<div class="after">
+<p>My name is mark leaves</p>
+<p>I live in chennai.</p>
+</div>
+
+<h2> before</h2>
+<div class="before">
+<p>My name is mark leaves</p>
+<p>I live in chennai.</p>
+<p> i am going to trichy</p>
+</div>
+
+<h2>The ::first-line Pseudo-element<h2>
+<div class="fline">
+<p> hello students</p>
+<p> hello boys</p>
+<p> hai hai everybody</p>
+</div>
+
+<h2>The ::first-letter Pseudo-element </h2>
+
+<div class="fletter">
+<p> hello students</p>
+<p> hello boys</p>
+<p> hai hai everybody</p>
+</div>
+
+<h2>CSS - The ::marker Pseudo-element</h2>
+<h2> bullets and numbering color change option using for order list and unorder list:</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+
+<h2>CSS - The ::selection Pseudo-element</h2>
+
+<h2> mouse draging color changing option</h2>
+
+<p class="pp">This is a paragraph.</p>
+<b style="font-size: 25px">hai everybody this is all selectors </b>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
